@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Papers - <%= subjectName %> - <%= examName %></title>
+  <link rel="stylesheet" href="/css/questionPaper.css"> <link rel="stylesheet" href="/css/navbar.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+</head>
+<body>
+    <%- include('partials/navbar', { subjects: subjects, exam: exam }) %> 
+
+    <main class="subject-page">
+        <header class="exam-header">
+            <h1><%= subjectName %> Question Papers for <%= examName %></h1>
+            <p>Select a Question Paper to start practicing.</p>
+          </header>
+      
+          <section class="subjects-container"> 
+            <% questionPapers.forEach((paper, index) => { %>
+              <a href="/<%= exam %>/<%= subject %>/<%= paper.questionPaperId %>/questions" 
+                 class="subject-card" data-subject="<%= subject %>"> 
+                <!-- <div class="question-number"><%= index + 1 %></div> -->
+                <i class="fas fa-file-alt subject-icon"></i> 
+                <div class="subject-name"><%= paper.questionPaperName %></div>
+              </a>
+            <% }); %>
+          </section>
+        </main>
+  <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

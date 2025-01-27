@@ -1,0 +1,43 @@
+/* /public/css/dashboard-questionPaper.css */
+
+/* Import base styles and variables */
+@import "dashboard.css"; 
+
+/* Question Papers List Container */
+.question-paper-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+/* Individual Question Paper Item */
+.question-paper-item {
+    background: var(--white);
+    border: 2px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex; 
+    justify-content: space-between; /* Align items to the start and end */
+    align-items: center; /* Vertically align items */
+    box-shadow: 0 4px 6px var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.question-paper-item:hover {
+    transform: translateY(-5px); 
+    border-color: var(--blue-500); 
+    box-shadow: 0 8px 12px rgba(59, 130, 246, 0.2); 
+}
+
+/* Link to Question Paper */
+.question-paper-item a {
+    text-decoration: none;
+    color: var(--blue-500);
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.question-paper-item a:hover {
+    color: darken(var(--blue-500), 10%); /* Slightly darker blue on hover */
+}

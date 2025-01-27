@@ -1,0 +1,484 @@
+{
+  "exams": [
+    {
+      "examId": "upsc",
+      "examName": "Union Public Service Commission",
+      "subjects": [
+        {
+          "subjectId": "english",
+          "subjectName": "English",
+          "questionPapers": [
+            {
+              "questionPaperId": "paper1",
+              "questionPaperName": "Sample Paper 1",
+              "questions": [
+                {
+                  "questionId": "q1",
+                  "question": "What is the synonym of 'Quick'?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Slow"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Rapid"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Tardy"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Sluggish"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "The synonym of 'Quick' is 'Rapid'."
+                },
+                {
+                  "questionId": "q1737889571205-bl2by2ite",
+                  "question": "randoom",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "randoom"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "randoom"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "qrandoom"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "randoom"
+                    }
+                  ],
+                  "correctOption": "a",
+                  "explanation": "randoom"
+                }
+              ]
+            },
+            {
+              "questionPaperId": "qp-1737889578379",
+              "questionPaperName": "PYQ-1",
+              "questions": [
+                {
+                  "questionId": "q1737889584168-lofsaebjg",
+                  "question": "What is the capital of France?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "London"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Paris"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Berlin"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Madrid"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "Paris is the capital city of France"
+                },
+                {
+                  "questionId": "q1737889584169-h6aig6rdu",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                }
+              ]
+            },
+            {
+              "questionPaperId": "qp-1737889596900",
+              "questionPaperName": "PYQ-2",
+              "questions": [
+                {
+                  "questionId": "q1737889605939-0nvtdrqh5",
+                  "question": "randoom",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "zrandoom"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "randoom"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "randoom"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "randoom"
+                    }
+                  ],
+                  "correctOption": "a",
+                  "explanation": "randoom"
+                },
+                {
+                  "questionId": "q1737889613694-zh3wjl1dv",
+                  "question": "What is the capital of France?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "London"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Paris"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Berlin"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Madrid"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "Paris is the capital city of France"
+                },
+                {
+                  "questionId": "q1737889613694-zbkbfapt8",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subjectId": "history",
+          "subjectName": "History",
+          "questionPapers": [
+            {
+              "questionPaperId": "qp-1737887162345",
+              "questionPaperName": "PYQ-1",
+              "questions": [
+                {
+                  "questionId": "q1737887361320-8rxpz2d6t",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                }
+              ]
+            },
+            {
+              "questionPaperId": "qp-1737887167984",
+              "questionPaperName": "PYQ-2",
+              "questions": []
+            }
+          ],
+          "questions": []
+        },
+        {
+          "subjectId": "polity",
+          "subjectName": "Polity",
+          "questionPapers": [],
+          "questions": []
+        },
+        {
+          "subjectId": "geography",
+          "subjectName": "Geography",
+          "questionPapers": [],
+          "questions": []
+        },
+        {
+          "subjectId": "indian-economy",
+          "subjectName": "Indian economy",
+          "questionPapers": [],
+          "questions": []
+        },
+        {
+          "subjectId": "science-&-technology",
+          "subjectName": "Science & Technology",
+          "questionPapers": [],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "examId": "cgl",
+      "examName": "Combined Graduate Level",
+      "subjects": [
+        {
+          "subjectId": "general-knowledge",
+          "subjectName": "General knowledge",
+          "questionPapers": [
+            {
+              "questionPaperId": "qp-1737888036209",
+              "questionPaperName": "PYQ-1",
+              "questions": [
+                {
+                  "questionId": "q1737888046333-ch1vtfnna",
+                  "question": "What is the capital of France?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "London"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Paris"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Berlin"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Madrid"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "Paris is the capital city of France"
+                },
+                {
+                  "questionId": "q1737888046333-byzxab7ok",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                },
+                {
+                  "questionId": "q1737888054973-mvysj8pdv",
+                  "question": "What is the capital of France?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "London"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Paris"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Berlin"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Madrid"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "Paris is the capital city of France"
+                },
+                {
+                  "questionId": "q1737888054973-z1xbst0ts",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                },
+                {
+                  "questionId": "q1737888317485-uw7h69bfb",
+                  "question": "What is the capital of France?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "London"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Paris"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Berlin"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Madrid"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "Paris is the capital city of France"
+                },
+                {
+                  "questionId": "q1737888317485-mor32g618",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                },
+                {
+                  "questionId": "q1737888362770-71zdxno44",
+                  "question": "What is the capital of France?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "London"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Paris"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "Berlin"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Madrid"
+                    }
+                  ],
+                  "correctOption": "b",
+                  "explanation": "Paris is the capital city of France"
+                },
+                {
+                  "questionId": "q1737888362770-q7hlwus2n",
+                  "question": "Who wrote \"Romeo and Juliet\"?",
+                  "options": [
+                    {
+                      "optionId": "a",
+                      "text": "Charles Dickens"
+                    },
+                    {
+                      "optionId": "b",
+                      "text": "Mark Twain"
+                    },
+                    {
+                      "optionId": "c",
+                      "text": "William Shakespeare"
+                    },
+                    {
+                      "optionId": "d",
+                      "text": "Jane Austen"
+                    }
+                  ],
+                  "correctOption": "c",
+                  "explanation": "William Shakespeare wrote Romeo and Juliet in the late 16th century"
+                }
+              ]
+            },
+            {
+              "questionPaperId": "qp-1737888040170",
+              "questionPaperName": "PYQ-2",
+              "questions": []
+            }
+          ],
+          "questions": []
+        }
+      ]
+    }
+  ]
+}

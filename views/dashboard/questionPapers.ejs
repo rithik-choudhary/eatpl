@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Question Papers - <%= subjectName %></title> 
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <%- include('./partials/sidebar', { currentPage: 'questionPapers' }) %> 
+    <main class="dashboard-main">
+      <div class="content-header"> 
+        <h1>
+          <%= examName %> / <%= subjectName %> - Question Papers
+        </h1>
+        <button class="add-button" id="addQuestionPaperBtn">
+          <i class="fas fa-plus"></i> Add Question Paper
+        </button>
+      </div>
+
+      <div class="exam-container">
+        <% questionPapers.forEach(paper => { %>
+          <div class="exam-card">
+            <a
+              href="/dashboard/questions/<%= examId %>/<%= subjectId %>/<%= paper.questionPaperId %>" 
+              class="text-decoration-none"
+            >
+              <div class="exam-icon">
+                <i class="fas fa-file-alt"></i> 
+              </div>
+              <h3 class="exam-title"><%= paper.questionPaperName %></h3>
+              <p class="card-stats">
+                <% const questionCount = paper.questions ? paper.questions.length : 0 %>
+                <i class="fas fa-question-circle"></i>
+                <span><%= questionCount %> Questions</span>
+              </p>
+            </a>
+            <!-- Add Delete button here if needed -->
+          </div>
+        <% }) %>
+
+      </div>
+
+      <!-- Question Paper Modal -->
+      <div id="questionPaperModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeQuestionPaperModal()">&times;</span> 
+          <h2>Add New Question Paper</h2>
+          <form action="/api/questionPapers" method="POST" id="newQuestionPaperForm">
+            <input type="hidden" name="examId" value="<%= examId %>" />   
+            <input type="hidden" name="subjectId" value="<%= subjectId %>" /> 
+            <div class="form-group">
+                <label for="paperName">Question Paper Name:</label>
+                <input type="text" id="paperName" name="paperName" required /> 
+            </div>
+            <div class="form-actions">
+                <button type="button" class="action-button secondary" onclick="closeQuestionPaperModal()">
+                    Cancel
+                </button>
+                <button type="submit" class="action-button primary">Create</button>
+            </div>
+        </form>
+        
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+
+        
+    const form = document.getElementById('newQuestionPaperForm');
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        // Get data from the form
+        const examId = document.querySelector('input[name="examId"]').value;
+        const subjectId = document.querySelector('input[name="subjectId"]').value;
+        const paperName = document.getElementById('paperName').value; 
+
+        // Create a JSON object
+        const data = { 
+            examId: examId,
+            subjectId: subjectId,
+            paperName: paperName 
+        };
+
+        try {
+          const response = await fetch('/api/questionPapers', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data) 
+          });
+
+          if (response.ok) {
+            // Handle successful question paper creation (e.g., refresh the page)
+            console.log('Question paper created successfully!');
+            location.reload(); // This will reload the current page
+          } else {
+            console.error('Failed to create question paper:', response.status);
+            // Handle error, maybe show a message to the user
+          }
+
+        } catch (error) {
+          console.error('Error creating question paper:', error);
+          // Handle error, maybe show a message to the user
+        }
+    });
+    // Function to open the question paper modal
+    const addQuestionPaperBtn = document.getElementById('addQuestionPaperBtn');
+    const questionPaperModal = document.getElementById('questionPaperModal');
+  
+    addQuestionPaperBtn.addEventListener('click', () => {
+      questionPaperModal.style.display = 'flex';
+    });
+    
+    // Function to close the questi.on paper modal
+    function closeQuestionPaperModal() {
+      questionPaperModal.style.display = 'none'; 
+    }
+
+    
+  </script>
+</body>
+</html>
